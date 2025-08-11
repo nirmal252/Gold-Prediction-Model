@@ -4,7 +4,7 @@ import streamlit as st
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import accuracy_score, r2_score
-from PIL import Image
+
 
 
 # Load data
@@ -26,8 +26,6 @@ score = r2_score(Y_test,pred)
 
 # web app
 st.title('Gold Price Model')
-img = Image.open('img.jpeg')
-st.image(img,width=200,use_column_width=True)
 
 st.subheader('Using randomforestregressor')
 st.write(gold_data)
